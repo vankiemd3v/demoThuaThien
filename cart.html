@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Đặc sản Huế</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="boxLogo">
+                <img src="img/logo2-removebg-preview-removebg-preview.png">
+            </div>
+            <div class="menuHome">
+                <ul>
+                    <li>
+                        <a href="index.html" >Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="product.html" style="color: yellow;">Sản phẩm</a>
+                    </li>
+                    <li>
+                        <a href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="boxSearch">
+                <input type="text" placeholder="Bạn muốn mua gì?">
+                <img src="img/search.png">
+            </div>
+            <div class="boxCart">
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span>0</span></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="cart">
+                <div class="titleCart">
+                    <a class="titleCarta" href="product.html"><i style="color: #288ad6;" class="fa-solid fa-chevron-left"></i> Mua thêm sản phẩm khác</a>
+                    <p class="titleCartp">Giỏ hàng của bạn</p>
+                </div>
+                <div class="contentCart">
+                    <div class="listCart">
+                        <div class="totalPayment">
+                            <p>Tổng tiền:</p>
+                            <span>300.000 đ</span>
+                        </div>
+                       
+                        <div class="itemCart">
+                            <img src="img/banner.png" />
+                            <p class="cartItemName">Bánh lọc</p>
+                            <p class="cartItemPrice">2.800 đồng/Cái</p>
+                            <div class="cartItemDelete">Xoá <i class="fa-solid fa-delete-left"></i></div>
+                            <div class="cartItemNumber">
+                                <div class="minus"><i class="fa-solid fa-minus"></i></div>
+                                <div class="buyNumber"><p class="txtBuyNumber">1</p></div>
+                                <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+
+                        </div>
+                        <div class="itemCart">
+                            <img src="img/banner.png" />
+                            <p class="cartItemName">Bánh lọc</p>
+                            <p class="cartItemPrice">2.800 đồng/Cái</p>
+                            <div class="cartItemDelete">Xoá <i class="fa-solid fa-delete-left"></i></div>
+                            <div class="cartItemNumber">
+                                <div class="minus"><i class="fa-solid fa-minus"></i></div>
+                                <div class="buyNumber"><p class="txtBuyNumber">1</p></div>
+                                <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="inforCustomer">
+                        <p>Thông tin khách hàng</p>
+                        <div class="inputCustomer">
+                            <input type="text" placeholder="Họ và tên" />
+                            <input type="text" placeholder="Số điện thoại" />
+                            <input type="text" placeholder="Địa chỉ" />
+                        </div>
+                    </div>
+                    <button class="btnOrder">ĐẶT HÀNG</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer1">
+            <img src="img/logo2-removebg-preview-removebg-preview.png">
+        </div>
+        <div class="footer2">
+            <h3>Liên hệ</h3>
+            <ul>
+                <li><a><i class="fa-solid fa-phone"></i> : 0336.154.196</a></li>
+                <li><a><i class="fa-sharp fa-solid fa-envelope"></i> : vankiemd3v@gmail.com</a></li>
+                <li><a><i class="fa-solid fa-location-dot"></i> : Vinh Hiền, Phú Lộc, Huế</a></li>
+            </ul>
+        </div>
+        <div class="footer3">
+            <h3>Kết nối với chúng tôi</h3>
+            <ul>
+                <li>
+                    <a><i style="color: #1877F2; font-size: 30px; background: white; border-radius: 5px; padding: 5px; margin-right: 10px;" class="fa-brands fa-facebook"></i></a>
+                    <a><i style="color: #da3535; font-size: 30px; background: white; border-radius: 5px; padding: 5px" class="fa-brands fa-google"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="js/glider.js">
+    </script>
+    <script>
+        $('.slide').glider({
+            list:'ul',
+            item:'li',
+            animation:'ease',
+            nextIcon:'<i style="background: none; color: white;" class="fa-solid fa-chevron-right"></i>',
+            backIcon:'<i style="background: none; color: white;" class="fa-solid fa-chevron-left"></i>',
+            delay: 5000
+        });
+    </script>
+    <!-- <script>
+        $('#dacsanHue').click(function() {
+            $('html, body').animate({
+            scrollTop: $("#DacSanHue").offset().top
+        }, 1500);
+        });
+    </script> -->
+    <script>
+        navbar = document.querySelector(".bars");
+        navbar.onclick = function(){
+            active = document.querySelector(".menuHome ul");
+            active.classList.toggle("active");
+
+            header = document.querySelector(".header");
+            header.classList.toggle("active1");
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
